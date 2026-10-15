@@ -1,62 +1,94 @@
-# MeoSea's FOV
+<div align="center">
 
-A tiny, client-side Fabric mod that lets you change the limits of Minecraft's FOV slider.
+<!-- BANNER HEADER -->
+<img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/main/images/banner.jpg" alt="MeoSea's FOV Banner" width="100%" />
 
-By default Minecraft only allows an FOV between 30 and 110. This mod lets you set your own minimum and maximum in a config file, and the slider in the video settings follows it.
+# 👁️ MeoSea's FOV
 
-## Features
+**Break the limits of Minecraft's default FOV slider.**
 
-- Raise the maximum FOV beyond 110 (default: 130)
-- Lower the minimum FOV below 30 if you want
-- The "Quake Pro" label moves to your new maximum
-- Lightweight: one config file, no extra screens, no gameplay changes
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/meosea-fov?color=green&label=Modrinth&logo=modrinth)](https://modrinth.com/project/meosea-fov)
+[![Fabric Loader](https://img.shields.io/badge/Fabric_Loader-0.19.5+-blue?logo=fabric)](https://fabricmc.net/)
+[![Minecraft](https://img.shields.io/badge/Minecraft-26.3-brightgreen?logo=minecraft)](https://minecraft.net/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Requirements
-
-- Minecraft 26.3
-- [Fabric Loader](https://fabricmc.net/use/) 0.19.5 or newer
-- Java 25 or newer
-
-Fabric API is **not** required. The mod is client-side only, so you do not need to install it on servers.
-
-## Installation
-
-1. Install Fabric Loader for Minecraft 26.3.
-2. Download the latest `.jar` from [Modrinth](https://modrinth.com/project/meosea-fov) or the [releases page](https://github.com/MeoSea/MeoSea-Fov).
-3. Put the file into your `mods` folder.
-4. Launch the game once. The config file will be created automatically.
-
-## Configuration
-
-The config file is created at `config/meoseas-fov.yml`:
-
-```yaml
-# FOV minimum of the slider (1 - 70)
-minFov: 30
-
-# FOV maximum of the slider (70 - 179)
-maxFov: 130
-```
-
-Notes:
-
-- **Restart the game** after editing the file. The slider range is created once at startup.
-- Values are clamped so that `minFov <= 70 <= maxFov`. 70 is Minecraft's default FOV, so the default always stays on the slider.
-- FOV values above about 140 look heavily stretched at the edges of the screen.
-- If your saved FOV is outside the new range, Minecraft resets it to the default.
-
-## Compatibility
-
-The mod changes the FOV option when `Options` is created, so it may conflict with other mods that also change the FOV slider range. If you run into a problem, please open an issue and include your `latest.log`.
-
-## Reporting issues
-
-Found a bug or have a suggestion? Open an issue on [GitHub](https://github.com/MeoSea).
-
-## License
-
-Released under the [MIT License](LICENSE).
+*A tiny, lightweight client-side Fabric mod that grants total control over your field of view range.*
 
 ---
 
-Made by [MeoSea](https://github.com/MeoSea).
+<!-- GIF DEMO (Bỏ comment khi bạn có file demo.gif) -->
+<!-- <img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/main/images/demo.gif" alt="FOV Slider Demo" width="85%" /> -->
+
+</div>
+
+## ✨ Key Features
+
+- 📈 **Break the 110 Upper Limit:** Push your max FOV up to 130 (or higher!).
+- 📉 **Lower Standard Bounds:** Reduce FOV below 30 for ultra-zoomed perspectives.
+- 🏷️ **Dynamic Labels:** The iconic *"Quake Pro"* text automatically locks to your custom maximum FOV.
+- ⚡ **Ultra Lightweight:** 
+  - Pure client-side (no server installation needed)
+  - Zero extra config screens or bloatware
+  - Single compact configuration file
+
+---
+
+## 🛠️ Requirements & Compatibility
+
+| Component | Minimum Version Required |
+| :--- | :--- |
+| **Minecraft** | `26.3` |
+| **Fabric Loader** | `0.19.5` or newer |
+| **Java** | `25` or newer |
+
+> ℹ️ **Note:** Fabric API is **NOT** required!
+
+---
+
+## 📦 Installation
+
+```text
+1. Download & install Fabric Loader for Minecraft 26.3.
+2. Grab the latest .jar from Modrinth or GitHub Releases.
+3. Drop the .jar file into your `.minecraft/mods` directory.
+4. Launch the game once to auto-generate the configuration file.
+```
+
+---
+
+## ⚙️ Configuration
+
+The config file will be generated at `config/meoseas-fov.yml`:
+
+```yaml
+# Minimum FOV threshold (Valid range: 1 - 70)
+minFov: 30
+
+# Maximum FOV threshold (Valid range: 70 - 179)
+maxFov: 130
+```
+
+<details>
+<summary><b>📌 Important Config Notes (Click to expand)</b></summary>
+
+- **Game Restart Required:** The slider boundary is calculated once during game initialization. Restart Minecraft after tweaking values.
+- **Auto-Clamping:** Values are clamped so `minFov <= 70 <= maxFov`. Minecraft's default FOV (70) will always remain safely inside the range.
+- **Visual Warning:** Setting FOV above `140` causes noticeable fisheye/stretching around screen borders.
+- **Safety Fallback:** If your currently saved FOV falls outside your new bounds, Minecraft will automatically reset it to default (70).
+</details>
+
+---
+
+## 🤝 Support & Compatibility
+
+- **Conflicts:** This mod hooks into `Options` at creation time. Mods that manipulate the FOV slider bounds simultaneously might cause conflicts.
+- **Issues:** Found a bug or have a feature idea? Feel free to open an issue on [GitHub Issues](https://github.com/MeoSea/MeoSea-Fov/issues).
+
+---
+
+<div align="center">
+
+Crafted with ❤️ by **[MeoSea](https://github.com/MeoSea)**  
+Released under the [MIT License](LICENSE)
+
+</div>
