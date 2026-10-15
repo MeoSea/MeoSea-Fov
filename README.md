@@ -16,8 +16,8 @@
 
 ---
 
-<!-- GIF DEMO (Bỏ comment khi bạn có file demo.gif) -->
-<!-- <img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/refs/heads/main/images/demo.gif" alt="FOV Slider Demo" width="85%" /> -->
+<!-- GIF DEMO -->
+<img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/refs/heads/main/images/demo.gif" alt="FOV Slider Demo" width="85%" />
 
 </div>
 
