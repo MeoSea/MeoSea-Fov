@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- BANNER HEADER -->
-<img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/images/banner.jpg" alt="MeoSea's FOV Banner" width="100%" />
+<img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/refs/heads/main/images/banner.png" alt="MeoSea's FOV Banner" width="100%" />
 
 # 👁️ MeoSea's FOV
 
@@ -17,7 +17,7 @@
 ---
 
 <!-- GIF DEMO (Bỏ comment khi bạn có file demo.gif) -->
-<!-- <img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/images/demo.gif" alt="FOV Slider Demo" width="85%" /> -->
+<!-- <img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/refs/heads/main/images/demo.gif" alt="FOV Slider Demo" width="85%" /> -->
 
 </div>
 
