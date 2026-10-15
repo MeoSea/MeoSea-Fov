@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "meoseas-fov",
+	"version": "${version}",
+	"name": "MeoSea's Fov",
+	"description": "Raises the FOV slider limit with a configurable min and max.",
+	"authors": ["MeoSea"],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT-1.0",
+	"icon": "assets/meoseas-fov/icon.png",
+	"environment": "client",
+	"mixins": [
+		{
+			"config": "meoseas-fov.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	}
+}
