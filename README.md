@@ -3,7 +3,7 @@
 <!-- BANNER HEADER -->
 <img src="https://raw.githubusercontent.com/MeoSea/MeoSea-Fov/refs/heads/main/images/banner.png" alt="MeoSea's FOV Banner" width="100%" />
 
-# 👁️ MeoSea's FOV
+# MeoSea's FOV
 
 **Break the limits of Minecraft's default FOV slider.**
 
